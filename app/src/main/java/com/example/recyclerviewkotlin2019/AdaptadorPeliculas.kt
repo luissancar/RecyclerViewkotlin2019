@@ -17,7 +17,6 @@ class AdaptadorPeliculas(var lista: ArrayList<Peliculas>): RecyclerView.Adapter<
             val titulo:TextView=itemView.findViewById(R.id.titulo)
             val imagen:ImageView=itemView.findViewById(R.id.imagen)
 
-
             titulo.text=datos.titulo
 
             Glide.with(itemView.context).load(datos.imagen).into(imagen)
